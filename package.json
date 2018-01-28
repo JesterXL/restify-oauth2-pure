@@ -20,7 +20,7 @@
   "bugs": "http://github.com/domenic/restify-oauth2/issues",
   "main": "lib/index.js",
   "scripts": {
-    "test": "npm run test-ropc-unit && npm run test-cc-unit && npm run test-ropc-integration && npm run test-cc-integration && npm run test-cc-with-scopes-integration",
+    "test": "mocha './test/**/*.test.js'",
     "test-ropc-unit": "mocha test/ropc-unit.coffee --reporter spec --compilers coffee:coffee-script/register",
     "test-cc-unit": "mocha test/cc-unit.coffee --reporter spec --compilers coffee:coffee-script/register",
     "test-ropc-integration": "vows test/ropc-integration.coffee --spec",
@@ -29,20 +29,15 @@
     "lint": "jshint lib && jshint examples"
   },
   "dependencies": {
-    "underscore": "1.x"
+    "lodash": "^4.17.4"
   },
   "peerDependencies": {
-    "restify": "4.x"
+    "restify": "6.x"
   },
   "devDependencies": {
-    "api-easy": "^0.4.0",
     "chai": "^3.2.0",
-    "coffee-script": "^1.9.3",
-    "jshint": "^2.8.0",
     "mocha": "^2.2.5",
     "restify": "^4.0",
-    "sinon": "^1.16.1",
-    "sinon-chai": "^2.8.0",
-    "vows": "^0.8.1"
+    "restify-errors": "^5.0.0"
   }
 }
