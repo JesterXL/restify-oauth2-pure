@@ -1,5 +1,5 @@
 {
-  "name": "restify-oauth2",
+  "name": "restify-oauth2-pure",
   "description": "A simple OAuth 2 endpoint for Restify",
   "keywords": [
     "restify",
