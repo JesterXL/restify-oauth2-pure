@@ -29,6 +29,7 @@
     "lint": "jshint lib && jshint examples"
   },
   "dependencies": {
+    "folktale": "^2.0.1",
     "lodash": "^4.17.4"
   },
   "peerDependencies": {
