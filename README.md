@@ -1,6 +1,16 @@
+# Wat
+
+This is a fork of Domenic's [Restify OAuth 2](https://github.com/domenic/restify-oauth2) library to update it to:
+- use Restify 6
+- refactor the JavaScript to more modern ES6 features
+- write unit tests in JavaScript instead of CoffeeScript
+- get 100% test coverage
+
+Work in progress, so one the code settles, I'll update the README.md to refact any API changes (hoping to keep the same).
+
 # OAuth 2 Endpoints for Restify
 
-This package provides a *very simple* OAuth 2.0 endpoint for the [Restify][] framework. In particular, it implements
+This package provides a *very simple* OAuth 2.0 endpoint for the [Restify](http://restify.com/) framework. In particular, it implements
 the [Client Credentials][cc] and [Resource Owner Password Credentials][ropc] flows only.
 
 ## What You Get
